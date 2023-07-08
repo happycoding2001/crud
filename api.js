@@ -114,4 +114,11 @@ module.exports = function (app,conn) {
       });
     });
   });
+
+
+
+  setInterval(function () {
+    conn.query('SELECT 1');
+    // console.log("数据库准备完成")
+  }, 5000);
 };

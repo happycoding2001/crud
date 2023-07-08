@@ -20,7 +20,7 @@ const mysql = require('mysql');
 
 
 
-
+// 实测不管用，重新链接会报端口占用
 function handleDisconnection(){
     const conn = mysql.createConnection(connStr)
     conn.connect( err=>{
